@@ -1,0 +1,14 @@
+:root{
+    --green: #BEE3CC;
+}
+
+
+/* .coffee{
+
+} */
+.price{
+    width: fit-content;
+    border-radius: 4px;
+    background-color: var(--green);
+    padding: 6px 10px;
+}
