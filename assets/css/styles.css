@@ -1,14 +1,179 @@
-:root{
-    --green: #BEE3CC;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+@media (min-width: 1440px) {
+    .principalDescription {
+        padding: 0 150px;
+        background-position: 80%;
+    }
+
+    #coffees {
+        padding: 2em 0;
+    }
 }
 
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .principalDescription {
+        padding: 0 150px;
+        background-position: 80%;
+    }
 
-/* .coffee{
+    .principalDescription h1 {
+        margin: 40px 0 8px 0;
+    }
+}
 
+@media (max-width: 1023px) and (min-width: 413px) {
+    .principalDescription {
+        padding: 0 150px;
+        background-position: 80%;
+    }
+}
+
+@media (max-width: 412px) {
+    #coffees {
+        padding: 0;
+    }
+    .principalDescription {
+        background-position: 160%;
+        padding-top: 18px;
+    }
+
+    .principalDescription h1 {
+        margin: 20px 0 8px 0;
+    }
+
+    .principalDescription p {
+        max-width: 90%;
+    }
+}
+
+:root {
+    --green: #BEE3CC;
+    --red: #ED735D;
+    --yellow: #F6C768;
+    --white: #FEF7EE;
+    --gray: #6F757C;
+    --darker: #111315;
+    --dark: #1B1D1F;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--darker);
+    color: var(--white);
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/bg-cafe.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#coffees {
+    background-color: var(--dark);
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: -8.5em;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.principalDescription {
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 160% top;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.principalDescription h1 {
+    font-size: 32px;
+}
+
+.principalDescription p {
+    color: var(--gray);
+    font-size: 16px;
+    width: 500px;
+    margin: auto;
+}
+.botones {
+    margin: 20px 0 14px 0;
+}
+.botones a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    /* border: solid red; */
+}
+.botones :hover {
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+/* .coffee {
+    margin-bottom: 1em;
 } */
-.price{
+.cardHeader {
+    position: relative;
+}
+
+.cardDescriptionpart1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular {
+    color: var(--darker);
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--yellow);
     width: fit-content;
+    height: fit-content;
+    padding: 4px 10px;
+    border-radius: 16px;
+    left: 8px;
+    bottom: 130px;
+    margin: 0;
+    position: absolute;
+}
+
+.price {
+    width: fit-content;
+    height: fit-content;
     border-radius: 4px;
     background-color: var(--green);
     padding: 6px 10px;
+    font-weight: 600;
+    color: var(--darker);
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.cardDescriptionpart2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.available {
+    color: var(--red);
+    font-weight: 600;
+    margin-top: 10px;
 }
