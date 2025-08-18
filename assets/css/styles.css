@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
-@media (min-width: 1440px) {
-    .principalDescription {
-        padding: 0 150px;
-        background-position: 80%;
-    }
-
+@media (min-width: 1350px) {
     #coffees {
         padding: 2em 0;
+        max-width: 82%;
     }
-}
-
-@media (max-width: 1439px) and (min-width: 1024px) {
     .principalDescription {
         padding: 0 150px;
-        background-position: 80%;
+        background-position: 80% top;
     }
 
     .principalDescription h1 {
@@ -21,19 +14,65 @@
     }
 }
 
-@media (max-width: 1023px) and (min-width: 413px) {
+@media (max-width: 1349px) and (min-width: 1024px) {
+    #coffees {
+        padding: 0;
+        max-width: 82%;
+    }
     .principalDescription {
         padding: 0 150px;
-        background-position: 80%;
+        background-position: 80% top;
+    }
+
+    .principalDescription h1 {
+        margin: 40px 0 8px 0;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    #coffees {
+        padding: 0;
+        max-width: 90%;
+    }
+    .principalDescription {
+        background-position: 80% top;
+    }
+
+    .principalDescription h1 {
+        margin: 40px 0 8px 0;
+    }
+
+    .principalDescription p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 413px) {
+    #coffees {
+        padding: 0;
+        max-width: 90%;
+    }
+    .principalDescription {
+        background-position: 120% top;
+    }
+
+    .principalDescription h1 {
+        margin: 40px 0 8px 0;
+    }
+
+    .principalDescription p {
+        max-width: 90%;
     }
 }
 
 @media (max-width: 412px) {
     #coffees {
         padding: 0;
+        max-width: 90%;
     }
+
     .principalDescription {
-        background-position: 160%;
+        background-position: 160% top;
         padding-top: 18px;
     }
 
@@ -75,25 +114,29 @@ header {
     margin: 0;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 #coffees {
     background-color: var(--dark);
-    width: 90%;
-    margin: 0 auto;
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 2em;
     justify-content: center;
     border-radius: 20px;
     margin-top: -8.5em;
     margin-bottom: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     position: relative;
 }
 
 .principalDescription {
     background-image: url(../images/vector.svg);
     background-repeat: no-repeat;
-    background-position: 160% top;
+    /* El background position primero posiciona de forma horizontal y luego vertical */
     width: 100%;
     align-content: center;
     text-align: center;
@@ -110,9 +153,11 @@ header {
     width: 500px;
     margin: auto;
 }
+
 .botones {
     margin: 20px 0 14px 0;
 }
+
 .botones a {
     color: var(--white);
     text-decoration: none;
@@ -120,10 +165,12 @@ header {
     padding: 10px;
     /* border: solid red; */
 }
+
 .botones :hover {
     background-color: var(--gray);
     border-radius: 10px;
 }
+
 /* .coffee {
     margin-bottom: 1em;
 } */
